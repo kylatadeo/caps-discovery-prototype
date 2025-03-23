@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- CSS and JS -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/student-info.css">
+        <link rel="stylesheet" href="styles/spmf.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="app.js"
+        defer></script>
+        <script type="text/javascript" src="charts.js"
+        defer></script>
+</head>
+<body>
+    <div class="main-contents bg-white border-lightgray txt-13" >
+        <div class="form-container">
+            <div class="info-container">
+                <div class="info-section">
+                    <div class="label">Name:</div>
+                    <div class="underline">Student 1</div>
+                </div>
+            
+                <div class="info-section">
+                    <div class="label">Student No.:</div>
+                    <div class="underline">202X-XXXXX</div>
+                </div>
+            
+                <div class="info-section">
+                    <div class="label">SAIS No.:</div>
+                    <div class="underline">10XXXXXX</div>
+                </div>
+            
+                <div class="info-section">
+                    <div class="label">Degree:</div>
+                    <div class="underline">BS IE</div>
+                </div>
+            </div>
+    
+            <div class="info-container">
+            <p class="honor-declaration">
+                I hereby declare, upon my honor, that I will accomplish this form with utmost honesty.
+            </p>
+    
+            <div class="signature-section">
+                <div class="underline signature"></div>
+                <div class="label">Signature</div>
+            </div>
+            </div>
+
+            <div class="title">
+                FOUR-YEAR CURRICULUM LEADING TO THE DEGREE OF <br>
+                <strong>BACHELOR OF SCIENCE IN INDUSTRIAL ENGINEERING</strong>
+            </div>
+    
+            <p class="version">Version 2018 (Effective AY 2018-2019)</p>
+        </div>
+
+        <div class="container" id="courseContainer">
+            <!-- Courses will be dynamically inserted here -->
+        </div>
+        <div class="progress-info">
+            <span id="percent-completed" class="progress-percentage txt-20 txt-semibold"></span>
+            <span id="units-completed" class="progress-text txt-13 txt-gray2"></span>
+          </div>
+        
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-ongoing"></div>
+            <div class="progress-remaining"></div>
+          </div>
+        
+          <div class="legend">
+            <span class="legend-item txt-13 txt-gray2">
+                <span class="dot ongoing"></span> 
+                <span id="units-in-progress"></span>
+            </span>
+            <span class="legend-item txt-13 txt-gray2">
+                <span class="dot remaining"></span> 
+                <span id="units-not-started"></span>
+            </span>
+        </div>
+        <div>
+            <button id="download-spmf-button" class="button bg-red txt-white">
+              <span class="material-symbols-outlined">
+                download</span>
+              <span class="txt-14 txt-semibold">Download PDF</span>
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

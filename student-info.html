@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- CSS and JS -->
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/student-info.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="app.js"
+  defer></script>
+  <script type="text/javascript" src="charts.js"
+  defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="heading3 bg-lightgray txt-bold txt-14">Degree Progress Overview
+      </div>
+      <div class="main-contents bg-white border-lightgray txt-13">
+        <!--sample-->
+        <div class="progress-container">
+          <div class="progress-info">
+            <span id="percent-completed" class="progress-percentage txt-20 txt-semibold"></span>
+            <span id="units-completed" class="progress-text txt-13 txt-gray2"></span>
+          </div>
+        
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-ongoing"></div>
+            <div class="progress-remaining"></div>
+          </div>
+        
+          <div class="legend">
+            <span class="legend-item txt-13 txt-gray2">
+                <span class="dot ongoing"></span> 
+                <span id="units-in-progress"></span>
+            </span>
+            <span class="legend-item txt-13 txt-gray2">
+                <span class="dot remaining"></span> 
+                <span id="units-not-started"></span>
+            </span>
+        </div>
+
+        </div>
+        
+        <!--scorecards-->
+        <div class="all-scorecards">
+          <!--big scorecards-->
+          <div class="scorecards">
+            <div class="big-scorecard yellow">
+              <h1 id="percent-in-progress" class="txt-center"></h1>
+              <p class="txt-12 txt-center">In Progress</p>
+            </div>
+
+            <div class="big-scorecard green">
+              <h1 id="percent-completed1" class="txt-center"></h1>
+              <p class="txt-12 txt-center">Complete</p>
+            </div>
+
+            <div class="big-scorecard light-gray">
+              <h1 id="percent-not-started" class="txt-center"></h1>
+              <p class="txt-12 txt-center">Not Started</p>
+            </div>
+          </div>
+          
+          <!--normal scorecards-->
+          <div class="scorecards">
+            <div class="scorecard">
+              <span class="icon blue">★</span>
+              <div class="text">
+                <p class="txt-gray2">Cumulative GPA</p>
+                <p id="cumulative-gpa" class="txt-15 txt-bold"></p>
+              </div>
+            </div>
+            
+            <div class="scorecard">
+              <span class="icon green">✔</span>
+              <div class="text">
+                <p class="txt-gray2">Classification</p>
+                <p id="classification" class="txt-15 txt-bold"></p>
+              </div>
+            </div>
+
+            <div class="scorecard">
+              <span class="icon green">✔</span>
+              <div class="text">
+                <p class="txt-gray2">Enrollment Status</p>
+                <p id="enrollment-status" class="txt-15 txt-bold"></p>
+              </div>
+            </div>
+
+            <div class="scorecard">
+              <span class="icon purple">🎓</span>
+              <div class="text">
+                <p class="txt-gray2">Scholastic Standing</p>
+                <p class="txt-15 txt-bold">Good</p>
+              </div>
+            </div>
+          
+            <div class="scorecard">
+              <span class="icon purple">🎓</span>
+              <div class="text">
+                <p class="txt-gray2">Progress Status by Units</p>
+                <p class="txt-15 txt-bold">On Time</p>
+              </div>
+            </div>
+          
+            <div class="scorecard">
+              <span class="icon purple">🎓</span>
+              <div class="text">
+                <p class="txt-gray2">Progress Status by Critical Path</p>
+                <p class="txt-15 txt-bold">On Time</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--descriptive analytics-->
+        <div class="descriptive-info">
+          <div class="txt-bold txt-14 txt-gray2">Course Performance across Semesters</div>
+          <div class="txt-bold txt-13 txt-green" id="termLabel"></div>
+          <div id="chart1_div" style="height:200px"></div>
+          <div>
+            <table class="remarks-table">
+              <thead>
+                  <tr>
+                      <th>Courses</th>
+                      <th>Grades</th>
+                      <th>Performance Level</th>
+                  </tr>
+              </thead>
+              <tbody id="gradeRemarks">
+                  <!-- GPA results will be inserted here -->
+              </tbody>
+            </table>
+
+            <div class="pagination">
+              <button id="prevBtn" disabled>Previous</button>
+              <span id="pageInfo">Page 1</span>
+              <button id="nextBtn">Next</button>
+            </div>
+          </div>
+          <!--<div id="chart2_div"></div>-->
+        </div>
+      </div>
+
+      <div class="heading3 bg-lightgray txt-bold txt-14" id="insightsLabel">Insights on
+      </div>
+      <div class="main-contents bg-white border-lightgray txt-13">
+        <div class="chart-container">
+          <div>
+            <p class="txt-bold txt-13 txt-gray2">Course GPA Trends</p>
+            <div id="chart3_div"></div>
+          </div>
+
+          <div class="scorecards2">
+            <div class="scorecard2">
+              <span class="icon2">💡</span>
+              <div class="txt-center">
+                <p class="txt-gray2">Courses Repeated</p>
+                <p class="txt-14 txt-bold">-</p>
+              </div>
+            </div>
+  
+            <div class="scorecard2">
+              <span class="icon2">💡</span>
+              <div class="txt-center">
+                <p class="txt-gray2">Number of times repeated</p>
+                <p class="txt-14 txt-bold">-</p>
+              </div>
+            </div>
+
+            <table class="insight-table">
+              <thead>
+                  <tr>
+                      <th colspan="2">Insights</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <div>
+            <p class="txt-bold txt-13 txt-gray2">Impact of taking courses together</p>
+            <table id="difficultyMatrix"></table>
+          </div>
+
+          <div class="scorecards2">
+            <div class="scorecard2">
+              <span class="icon2">💡</span>
+              <div class="txt-center">
+                <p class="txt-gray2">Overall Difficulty Index</p>
+                <p class="txt-14 txt-bold">-</p>
+              </div>
+            </div>
+  
+            <div class="scorecard2">
+              <span class="icon2">💡</span>
+              <div class="txt-center">
+                <p class="txt-gray2">Overall Workload Rating</p>
+                <p class="txt-14 txt-bold">-</p>
+              </div>
+            </div>
+
+            <table class="insight-table">
+              <thead>
+                  <tr>
+                      <th colspan="2">Insights</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!--
+      <div class="heading3 bg-lightgray txt-bold txt-14">Plan of Course Work
+        <button class="button bg-lightgray">
+          <img src="icons/edit-square.png">
+        </button>
+      </div>
+      <div class="main-contents bg-white border-lightgray txt-13">
+    
+        <div class="container1">
+          <div class="row">
+            <div class="label">Curriculum</div>
+            <div class="value"><span class="badge">CEAT</span> <span class="badge">BS Industrial Engineering</span></div>
+          </div>
+        
+          <div class="row">
+            <div class="label">Number of academic units (per semester)</div>
+            <div class="value"><span class="badge">18 - 21 units</span></div>
+          </div>
+
+          <div class="row">
+            <div class="label">Major/Specialization</div>
+            <div class="value"><span class="badge">None</span></div>
+          </div>
+        
+          <div class="row">
+            <div class="label">Research Track</div>
+            <div class="value"><span class="badge">Engineering Industry Research</span></div>
+          </div>
+
+          <div class="row">
+            <div class="label">Curriculum Version</div>
+            <div class="value"><span class="badge">BS IE 2018</span></div>
+          </div>
+                  
+          <div class="row">
+            <div class="label">Target number of years to graduate</div>
+            <div class="value"><span class="badge">4 years</span></div>
+          </div>
+        
+          <div class="row">
+            <div class="label">Major/Specialized Courses</div>
+            <div class="value"><span class="badge">None</span></div>
+          </div>
+                                        
+          <div class="row">
+            <div class="label">Technical Cognate Courses</div>
+            <div class="value"><span class="badge">MGT 131</span> <span class="badge">IE 191</span></div>
+          </div>
+        
+          <div class="row">
+            <div class="label">Classification</div>
+            <div class="value"><span class="badge">Senior</span></div>
+          </div>
+
+          <div class="row">
+            <div class="label">Target Graduation Term and Date</div>
+            <div class="value"><span class="badge">Midyear 2025</span> <span class="badge">July 2026</span></div>
+          </div>
+
+          <div class="row">
+            <div class="label">Elective Courses</div>
+            <div class="value"><span class="badge">None</span></div>
+          </div>
+
+          <div class="row">
+            <div class="label">GE Elective Courses</div>
+            <div class="value"><span class="badge">MATH 10</span> <span class="badge">SAS 1</span> <span class="badge">SCIENCE 11</span></div>
+          </div>
+        </div>
+      </div>
+      -->
+  </body>
+</html>

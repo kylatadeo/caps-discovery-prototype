@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: auto; /* Enables horizontal scrolling if needed */
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  border-right:1px dashed #9c9c9c;
+  border-top:1px solid #9c9c9c; 
+  border-bottom:1px solid #9c9c9c; 
+}
+
+.column:first-child {
+  border-left:1px solid #9c9c9c; 
+}
+
+.column:last-child {
+  border-right:1px solid #9c9c9c;  
+}
+
+.term-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+  color: #464651;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.course-box {
+  min-width: 70px; 
+  max-width: 90px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  white-space: nowrap; /* Prevents text wrapping */
+  border-radius: 5px;
+  font-weight: 500;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.course-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1; /* Pushes units to the bottom */
+}
+
+.total-units {
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+#download-spmf-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 5px;
+  gap: 5px; 
+}
+
+#download-spmf-button:hover {
+  background-color: #8d1436;
+}
+
+.form-container {
+  width: 100%;
+  text-align: left;
+}
+
+.info-container {
+  display: flex;
+  justify-content: flex-start; /* Distributes sections evenly */
+  align-items: flex-start;
+  gap: 5px; /* Adds spacing between sections */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.info-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.label {
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+  min-width: 100px;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.honor-declaration {
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.signature {
+  min-width: 150px;
+  margin-right: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.version {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}

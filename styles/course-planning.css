@@ -1,0 +1,41 @@
+body {
+  background-color: #f3f4f6;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: start;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #8d1436;
+  color: #f59e0b;
+}
+
+.inactive {
+  background-color: #d3d3d3;
+  color: #939393;
+}
+
+.inactive:hover {
+  background-color: #bcbcbc;
+}
+
+.content {
+  width: 100%;
+  padding-top: 10px;
+}

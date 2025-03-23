@@ -1,0 +1,243 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONT */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*icons*/
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 1
+}
+
+/* COLORS */
+.bg-white {
+  background-color: white;
+}
+
+.bg-lightgray {
+  background-color: #f3f4f6;
+}
+
+.bg-maroon {
+  background-color: #8d1436;
+}
+
+.bg-red {
+  background-color: #bf2828; 
+}
+
+.bg-green {
+  background-color: #059669;
+}
+
+.bg-darkgreen {
+  background-color: #00563f;
+}
+
+.bg-blue {
+  background-color: #3b82f6; 
+}
+
+.bg-yellow {
+  background-color: #f59e0b;
+}
+
+.bg-darkpurple {
+  background-color: #553768;
+}
+
+/* BORDER STYLES */
+.border-lightgray {
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.border-round4 {
+  border-radius: 4px;
+}
+
+.border-round8 {
+  border-radius: 8px;
+}
+
+/* PADDING AND MARGINS */
+.pad-h1 {
+  padding: 16px 12px;
+}
+
+.pad-h2 {
+  padding: 8px 12px;
+}
+
+/* TEXT STYLES*/
+.txt-regular {
+  font-weight: 400;
+}
+
+.txt-medium {
+  font-weight: 500;
+}
+
+.txt-semibold {
+  font-weight: 600;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-green {
+  color: #059669;
+}
+
+.txt-gray0 {
+  color: #4b5563;
+}
+
+.txt-gray1 {
+  color: #464651;
+}
+
+.txt-gray2 {
+  color: #4e4d4d; 
+}
+
+.txt-24 {
+  font-size: 24px;
+}
+
+.txt-22 {
+  font-size: 22px;
+}
+
+.txt-20 {
+  font-size: 20px;
+}
+
+.txt-19 {
+  font-size: 19px;
+}
+
+.txt-17 {
+  font-size: 17px;
+}
+
+.txt-16 {
+  font-size: 16px;
+}
+
+.txt-15 {
+  font-size: 15px;
+}
+
+.txt-14 {
+  font-size: 14px;
+}
+
+.txt-13 {
+  font-size: 13px;
+}
+
+.txt-12 {
+  font-size: 12px;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+/* OTHERS */
+.button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.right-most {
+  margin-left: auto;
+}
+
+/* badge */
+
+.purple {
+  background: #e0c6ff;
+  color: #5a4475;
+}
+
+.blue {
+  background: #89e3ff;
+  color: #3b82f6;
+
+}
+
+.green {
+  background: #a7f3d0;
+  color: #23856a;
+}
+
+.yellow {
+  background: #ffefca;
+  color: #e69138;
+}
+
+.orange {
+  background: #ffd1b5;
+  color: #ff3131;
+}
+
+.light-gray {
+  background: #efefef;
+  color: #f8312f;
+}
+
+/* headings */
+.heading1 {
+  padding: 16px 24px;
+  margin-bottom: 32px;
+  max-width: 98vw;
+  text-align: center;
+}
+
+.heading2 {
+  padding: 10px 24px;
+  margin-bottom: 16px;
+  max-width: 98vw;
+}
+
+/* not being used asf */
+.heading3 {
+  padding: 8px 24px;
+  max-width: 98vw;
+  border-color: #e5e7eb;
+  border-width: 1.5px;
+  border-style: solid;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.main-contents {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 16px 24px;
+  line-height: 150%;
+  margin-bottom: 16px;
+  max-width: 98vw;
+  width: 1216px;
+}

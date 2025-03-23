@@ -1,0 +1,96 @@
+
+[
+  {"term":"1S AY21-22",
+   "courses": [
+    { "code": "ARTS 1", "grade": 1.25 },
+    { "code": "ETHICS 1", "grade": 1.5 },
+    { "code": "MATH 27", "grade": 1.5 },
+    { "code": "IE 10", "grade": 1.25 },
+    { "code": "PHYS 51", "grade": 1.5 },
+    { "code": "PHYS 51.1", "grade": 1 },
+    { "code": "CHEM 18", "grade": 1.5 },
+    { "code": "HK 11", "grade": 1.5 }
+  ]},
+  {"term":"2S AY21-22",
+    "courses": [
+    { "code": "STS 1", "grade": 1 },
+    { "code": "ENSC 11", "grade": 1.5 },
+    { "code": "MATH 28", "grade": 1.25 },
+    { "code": "IE 31", "grade": 1.75 },
+    { "code": "IE 21", "grade": 2 },
+    { "code": "STAT 101", "grade": 1 },
+    { "code": "CHEM 18.1", "grade": 1.75 },
+    { "code": "NSTP 1", "grade": 1 }
+  ]},
+  {"term":"1S AY22-23",
+    "courses": [
+    { "code": "ENSC 21", "grade": 2 },
+    { "code": "ENSC 12", "grade": 3 },
+    { "code": "IE 141", "grade": 2.5 },
+    { "code": "IE 132", "grade": 2.25 },
+    { "code": "IE 125", "grade": 1.75 }
+  ]},
+  {"term":"2S AY22-23",
+    "courses": [
+    { "code": "KAS 1", "grade": 1.25 },
+    { "code": "MATH 10", "grade": 1 },
+    { "code": "ENSC 10.1", "grade": 1.25 },
+    { "code": "IE 142", "grade": 3 },
+    { "code": "IE 151", "grade": 2 },
+    { "code": "IE 150", "grade": 2 },
+    { "code": "MGT 111", "grade": 1.5 }
+  ]},
+  {"term":"MIDYR 22-23",
+    "courses": [
+    { "code": "ENSC 13", "grade": 1.25 },
+    { "code": "ENSC 16", "grade": 2.25 }
+  ]},
+  {"term":"1S AY23-24",
+    "courses": [
+    { "code": "COMM 10", "grade": 1.5 },
+    { "code": "EE 1", "grade": 2 },
+    { "code": "IE 143", "grade": 2.25 },
+    { "code": "IE 152", "grade": 1.75 },
+    { "code": "ENSC 26", "grade": 1.5 },
+    { "code": "IE 134", "grade": 2 },
+    { "code": "NSTP 2", "grade": 1 }
+  ]},
+  {"term":"2S AY23-24",
+    "courses": [
+    { "code": "SAS 1", "grade": 1 },
+    { "code": "ENSC 14A", "grade": 2 },
+    { "code": "IE 144", "grade": 1.75 },
+    { "code": "IE 184", "grade": 1.75 },
+    { "code": "IE 164", "grade": 2 },
+    { "code": "IE 136", "grade": 2 }
+  ]},
+  {"term":"MIDYR 23-24",
+    "courses": [
+    { "code": "IE 198", "grade": 1 }
+  ]},
+  {"term":"1S AY24-25",
+    "courses":[
+      {"code":"MGT 131", "grade":""},
+      {"code":"IE 199", "grade":""},
+      {"code":"IE 158", "grade":""},
+      {"code":"IE 185", "grade":""},
+      {"code":"IE 165", "grade":""},
+      {"code":"IE 200C", "grade":""},
+      {"code":"HK 12 (1)", "grade":""}
+  ]},
+  {"term":"2S AY24-25",
+    "courses": [
+      {"code":"IE 90"},
+      {"code":"ENG 10"},
+      {"code":"PI 10"},
+      {"code":"SCIENCE 11"},
+      {"code":"ABE 43"},
+      {"code":"IE 191"},
+      {"code":"IE 200C"}
+  ]},
+  {"term": "MIDYR 24-25",
+    "courses": [
+      {"code":"HK 12 (2)"},
+      {"code":"HK 12 (3)"}
+  ]}
+]

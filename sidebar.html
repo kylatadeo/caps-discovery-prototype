@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar-menu.css">
+  </head>
+  <body>
+    <!-- Side Bar Menu -->
+    <aside id="sidebar" class="bg-white close">
+      <ul>
+        <li class="active txt-14 txt-semibold">
+          <a href="main-dashboard.html">
+            <span class="material-symbols-outlined">
+              home</span>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li>
+          <button onclick=toggleSubMenu(this) class="dropdown-button button txt-14 txt-semibold">
+            <span class="material-symbols-outlined">
+              school</span>
+            <span>Student Portal</span>
+            <span class="chevron-riht material-symbols-outlined right-most">
+              chevron_right</span>
+          </button>
+            <ul class="sub-menu1 txt-14 txt-regular">
+              <div>
+                <li>
+                  <button onclick=toggleSubMenu(this) class="dropdown-button button txt-14 txt-regular">
+                    <span>Enrollment</span>
+                    <span class="material-symbols-outlined right-most">
+                      chevron_right</span>
+                  </button>
+                    <ul class="sub-menu2">
+                      <div>
+                        <li>
+                          <a href="#">
+                            <span>Consent of Instructor</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Departamental Consent</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>OCS Consent</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Prerogative Enrollment</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span>Enlistment Module</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="course-planning.html">
+                            <span>Course Planning</span>
+                          </a>
+                        </li>
+                      </div>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>SET Module</span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+        </li>
+
+        <li>
+          <button onclick=toggleSubMenu(this) class="dropdown-button button txt-14 txt-semibold">
+            <span class="material-symbols-outlined">
+            school</span>
+            <span>Academic Catalog</span>
+            <span class="material-symbols-outlined right-most">
+              chevron_right</span>
+          </button>
+            <ul class="sub-menu1 txt-14 txt-regular">
+              <div>
+                <li>
+                  <a href="#">
+                    <span>Course List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Program List</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>Curriculum List</span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+        </li>
+      </ul>
+    </aside>
+  </body>
+</html>

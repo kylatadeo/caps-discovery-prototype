@@ -1,0 +1,49 @@
+body {
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  margin-top: 0 24px;
+}
+
+/* Grid Container */
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* Left Section (White) */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.left-section img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.left-section p {
+  margin: 16px 0;
+}
+
+.left-section h2 {
+  padding: 0 32px;
+}
+
+.login-button {
+  padding: 8px 16px;
+  margin: 16px 0;
+}
+
+/* Right Section (Maroon) */
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+  .login-container {
+      grid-template-columns: 1fr;
+  }
+}

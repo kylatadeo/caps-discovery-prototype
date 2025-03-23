@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <!-- CSS and JS -->
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/course-plan.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="app.js"
+        defer></script>
+        <script type="text/javascript" src="charts.js"
+        defer></script>
+  </head>
+  <body>
+    <!--scorecards-->
+    <div class="scorecards">
+      <div class="scorecard">
+        <span class="icon blue" style="padding-bottom: 2px;">📚</span>
+        <div class="text">
+          <p class="txt-gray2">Total number of units</p>
+          <p class="total-units txt-14 txt-bold">0</p>
+        </div>
+      </div>
+    
+      <div class="scorecard">
+        <span class="icon yellow" style="padding-bottom: 3px;">⚠️</span>
+        <div class="text">
+          <p class="txt-gray2">Risk of Course Overload</p>
+          <p class="txt-14 txt-bold">-</p>
+        </div>
+      </div>
+    
+      <div class="scorecard">
+        <span class="icon green">🏆</span>
+        <div class="text">
+          <p class="txt-gray2">Course Success Prediction</p>
+          <p class="txt-14 txt-bold">-</p>
+        </div>
+      </div>
+    
+      <div class="scorecard">
+        <span class="icon orange">🧠</span>
+        <div class="text">
+          <p class="txt-gray2">Predicted GPA</p>
+          <p class="txt-14 txt-bold">-</p>
+        </div>
+      </div>
+    
+      <div class="scorecard">
+        <span class="icon purple">🎓</span>
+        <div class="text">
+          <p class="txt-gray2">Projected Graduation</p>
+          <p class="txt-14 txt-bold">-</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading2 bg-darkgreen txt-14 txt-bold txt-white border-round4" style="margin-top: 16px; width: 1216px;">Recommended Courses for First Semester  A.Y. 2024-2025</div>
+
+    <!--<div>
+      <button id="view-spmf-button" class="button bg-darkpurple txt-white">
+        <span class="material-symbols-outlined">
+          visibility</span>
+        <span class="txt-14 txt-semibold">View Progress Chart</span>
+      </button>
+    </div>-->
+
+    <!--placeholder-->
+    <table class="txt-14">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Title</th>
+          <th>Credited Units</th>
+          <th>Difficulty Level</th>
+          <th>Predicted Course Performance</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody class="course-plan">
+        <tr class="course-info">
+          <!--<td></td>
+          <td></td>
+          <td></td>
+          <td class="difficulty"></td>
+          <td class="performance"></td>
+          <td>
+            <button class="view-button bg-green button txt-white">View Info</button>
+            <button id="remove-button" class="remove-button hide bg-red button txt-white">Remove</button>
+          </td>-->
+        </tr>
+      </tbody>
+  </table>
+
+  <div style="display: flex; justify-content: end; gap: 10px;">
+    <button id="modify-button" class="modify-button bg-blue button txt-white">Modify Course Plan</button>
+    <button id="save-button" class="save-button bg-green button txt-white" disabled>Save Changes</button>
+  </div>
+
+  <div class="courseList-container hide">
+    <div class="heading2 bg-yellow txt-14 txt-bold txt-white border-round4" style="margin-top: 16px;">Add a Course</div>
+
+    <div class="search-bar">
+      <div>
+        <p class="txt-12 txt-gray1">Course Code</p>
+        <input type="text" id="course-input">
+      </div>
+      <div>
+        <button id="filter" class="button bg-blue txt-white">
+          <span class="material-symbols-outlined">
+            filter_alt</span>
+          <span class="txt-14 txt-semibold">Apply Filter</span>
+        </button>
+      </div>
+      
+    </div>
+ 
+    <!--course list-->
+    <div class="tabs">
+      <div class="tab1 active1" onclick="courseLists(0,'major')">🕮 Major</div>
+      <div class="tab1 inactive1" onclick="courseLists(1,'foundational')">🕮 Foundational</div>
+      <div class="tab1 inactive1" onclick="courseLists(2,'specialized')">🕮 Specialized</div>
+      <div class="tab1 inactive1" onclick="courseLists(3,'elective')">🕮 Elective</div>
+      <div class="tab1 inactive1" onclick="courseLists(4,'cognate')">🕮 Technical Cognate</div>
+      <div class="tab1 inactive1" onclick="courseLists(5,'ge')">🕮 General Education</div>
+      <div class="tab1 inactive1" onclick="courseLists(6,'non_gpa')">🕮 Non-GPA</div>
+  </div>
+    <!-- Tab Content (Dynamic Load) -->
+      <!--table-->
+      <table class="txt-14">
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Title</th>
+            <th>Credited Units</th>
+            <th>Difficulty Level</th>
+            <th>Predicted Course Performance</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="course-list">
+          <tr class="course-info">
+            <td>MGT 131</td>
+            <td>Introduction to Human Relations and Behavior in Organizations</td>
+            <td>3</td>
+            <td class="difficulty">Easy</td>
+            <td class="performance">Good</td>
+            <td>
+              <button class="view-button bg-green button txt-white">View Info</button>
+              <button class="add-button bg-blue button txt-white">Add</button>
+            </td>
+          </tr>
+        </tbody>
+     </table>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+nav {
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 1px solid #e5e7eb;
+height: 64px; 
+padding: 0 24px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 290px;
+}
+
+.header-left button {
+  font-size: 28px;
+}
+
+.header-left img {
+  width: 168px;
+}
+
+.header-middle {
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+}
+
+.header-right img {
+  width: 32px;
+  cursor: pointer;
+}
+
+#toggle-button, .header-right button {
+  font-size: 28px;
+}
+
